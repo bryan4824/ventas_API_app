@@ -1,0 +1,20 @@
+graph TD
+    subgraph Servidor_Python [FastAPI Backend]
+        M[main.py] --> R[Routes: Productos/Vendedores]
+        R --> S[Services: Lógica de Negocio]
+        S --> P[Models: Pydantic/Schemas]
+        P --> DB[(Supabase SQL)]
+    end
+
+    subgraph Servidor_Node [Node.js Web]
+        W[index.js] --> V[Vistas EJS]
+        V --> Auth[Middleware: Seguridad]
+    end
+
+    Auth -->|Petición API| M
+    style Servidor_Python fill:#4b8b4b,color:#fff
+    style Servidor_Node fill:#336699,color:#fff
+    style DB fill:#3ecf8e,color:#000
+
+
+    

@@ -1,0 +1,34 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# --- Entornos Virtuales ---
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# --- Variables de Entorno (SEGURIDAD) ---
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# --- IDEs y Editores ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Base de Datos Local (opcional) ---
+*.db
+*.sqlite3
+
+# --- Logs ---
+*.log

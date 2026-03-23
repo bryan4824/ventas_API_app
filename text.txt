@@ -1,0 +1,36 @@
+pip install fastapi uvicorn pydantic pydantic-settings supabase
+python -m venv venv  
+.\venv\Scripts\Activate  
+
+// "scripts": {
+  //   "dev": "node --watch index.js",
+  //   "test": "echo \"Error: no test specified\" && exit 1"
+  // }
+
+
+
+
+  PARA CORRER NODE JS Y FAST API EN UNA SOLO COMANDO SE USA:
+  TODO ESTO EN package.json --->
+  
+  "scripts": {
+  "node": "nodemon index.js",
+  "fastapi": "cd ../ventas-api && venv\\Scripts\\python -m uvicorn app.main:app --reload",
+  "dev": "concurrently \"npm run node\" \"npm run fastapi\""
+}
+
+para ver que tienes installado 
+npm list --depth=0
+
+entorno virtual y activar entorno virtual
+python -m venv venv
+.\venv\Scripts\activate
+
+installar lo necesario para el proyecto 
+pip install fastapi uvicorn pydantic pydantic-settings supabase
+
+actualizar el equirement
+pip freeze > requirements.txt
+
+ver lo  installado
+pip freeze
